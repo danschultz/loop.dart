@@ -7,7 +7,7 @@ environment:
   sdk: '>=1.10.0 <2.0.0'
 dependencies:
   frappe: ^0.4.0
+  option: ^1.1.0
 dev_dependencies:
   browser: any
-  option: any
   react: any
