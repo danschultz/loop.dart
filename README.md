@@ -1,19 +1,14 @@
 # dedux
 
-A library for Dart developers. It is awesome.
+A Elm and Redux inspired framework for Dart.
 
 ## Usage
 
-A simple usage example:
-
-    import 'package:dedux/dedux.dart';
-
-    main() {
-      var awesome = new Awesome();
-    }
+Check out the [examples] folder.
 
 ## Features and bugs
 
 Please file feature requests and bugs at the [issue tracker][tracker].
 
-[tracker]: http://example.com/issues/replaceme
+[tracker]: https://github.com/danschultz/dedux/issues
+[examples]: https://github.com/danschultz/dedux/tree/master/example/
