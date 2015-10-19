@@ -1,6 +1,6 @@
-# dedux
+# loop.dart
 
-A Elm and Redux inspired framework for Dart.
+An experimental unidirectional data flow framework for Dart.
 
 ## Usage
 
