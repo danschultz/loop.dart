@@ -1,11 +1,11 @@
 part of dedux.example.reddit.views.app;
 
-view(Context<State> context, State state) => _view({"context": context, "state": state});
+view(Dispatcher dispatcher, State state) => _view({"dispatcher": dispatcher, "state": state});
 
 final _view = registerComponent(() => new _AppView());
 
 class _AppView extends Component {
-  Context<State> get _context => props["context"];
+  Dispatcher get _dispatcher => props["dispatcher"];
   State get _state => props["state"];
 
   String get _searchTerm => state["searchTerm"];
@@ -19,7 +19,7 @@ class _AppView extends Component {
 
     _onSubmit = new Channel();
     _onSubmit.stream.where((event) => event.keyCode == 13).listen((event) {
-      _context.dispatch(new SearchAction(event.target.value));
+      _dispatcher(new SearchAction(event.target.value));
     });
 
     _onChange = new Channel(sync: true);

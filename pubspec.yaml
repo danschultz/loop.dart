@@ -9,5 +9,5 @@ dependencies:
   frappe: ^0.4.0
   option: ^1.1.0
 dev_dependencies:
-  browser: any
-  react: any
+  browser: ^0.10.0
+  react: ^0.8.0

@@ -10,7 +10,8 @@ class Context<S> {
 
   Context(S initialState, Reducer<S> reducer) {
     _updates = _actions.stream
-        .scan(new Update(initialState, noEffect), (Update<S> update, action) => reducer(update.state, action));
+        .scan(new Update(initialState), (Update<S> update, action) => reducer(update.state, action));
+
     _state = _updates
         .doAction((update) => update.effect(_actions, update.state))
         .map((update) => update.state)

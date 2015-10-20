@@ -2,7 +2,7 @@ library dedux.example.reddit.views.app;
 
 import 'dart:convert';
 import 'dart:html';
-import 'package:dedux/dedux.dart';
+import 'package:loop/loop.dart';
 import 'package:option/option.dart';
 import 'package:react/react.dart';
 
