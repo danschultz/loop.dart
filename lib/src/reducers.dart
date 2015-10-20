@@ -1,3 +1,10 @@
 part of dedux;
 
-typedef S Reducer<S>(S state, Action action);
+typedef Update<S> Reducer<S>(S state, Action action);
+
+class Update<S> {
+  final S state;
+  final Effect effect;
+
+  Update(this.state, this.effect);
+}

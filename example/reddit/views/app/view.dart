@@ -19,7 +19,7 @@ class _AppView extends Component {
 
     _onSubmit = new Channel();
     _onSubmit.stream.where((event) => event.keyCode == 13).listen((event) {
-      _context.dispatch(fetchPosts(event.target.value));
+      _context.dispatch(new SearchAction(event.target.value));
     });
 
     _onChange = new Channel(sync: true);
