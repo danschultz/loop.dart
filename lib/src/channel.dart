@@ -1,4 +1,4 @@
-part of dedux;
+part of loop;
 
 class Channel<T> implements StreamController<T> {
   final StreamController<T> _controller;

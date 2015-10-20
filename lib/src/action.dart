@@ -1,3 +1,3 @@
-part of dedux;
+part of loop;
 
 abstract class Action {}

@@ -1,4 +1,4 @@
-part of dedux;
+part of loop;
 
 class Context<S> {
   final _actions = new Channel<Action>.broadcast();

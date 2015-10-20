@@ -1,4 +1,4 @@
-part of dedux;
+part of loop;
 
 typedef Future Effect<S>(Channel<Action> actions, S state);
 
