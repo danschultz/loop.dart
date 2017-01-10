@@ -9,7 +9,7 @@ class UsersService {
     return _simulateDelay(() => _isPasswordValidSync(password));
   }
 
-  Future<User> signup(String username, String password, String name, String email) {
+  Future<User> signup(String username, String password) {
     return _simulateDelay(() {
       if (!_isUsernameAvailableSync(username)) {
         throw "Username is taken";
@@ -19,11 +19,7 @@ class UsersService {
         throw "Password is not valid";
       }
 
-      if (name.isEmpty) {
-        throw "Name is empty";
-      }
-
-      return new User(1, username, name, email);
+      return new User(1, username);
     });
   }
 
